@@ -2,7 +2,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const { secretKey } = require('./database');
 
-const User = require('../src/models/user');
+const User = require('../../models/user');
 const bcrypt = require('bcrypt');
 
 passport.use(
